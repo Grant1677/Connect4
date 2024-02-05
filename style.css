@@ -1,0 +1,94 @@
+/***************************************************************************************
+ * Programmer:  Grant Long
+ * Professor:   Dr. Zhao
+ * Date:        1/15/2024
+ * Assigment:   Individual Project
+ * Synopsis:    This CSS file contains the styling for the connect 4 game.
+ ***************************************************************************************/
+
+html {
+    height: 100%;
+    width: 100%;
+}
+  
+body {
+    font: Arial, Helvetica, sans-sarif;
+    text-align: center;
+    background-color: #F3F8FF;
+   
+} 
+
+#logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+  
+#board {
+    height: 690px;
+    width: 756px;
+    background-color: blue;
+    border: 10px solid navy;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#clear {
+    margin: 50px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: navy;
+    color: #F3F8FF;
+    cursor: pointer;
+}
+
+.tile {
+    height: 95px;
+    width: 95px;
+    margin: 5px;
+    background-color: #F3F8FF;
+    border-radius: 50%;
+    border: 5px solid navy;
+
+}
+
+
+.red-piece {
+    /* background-color: red; */
+    background-image: linear-gradient(to bottom right, white,  red, #C70039);
+    border: 5px solid #9A031E;
+    
+    
+}
+
+  
+.yellow-piece {
+    background-color: yellow;
+    background-image: linear-gradient(to bottom right, white,yellow, #FFB000);
+    border: 5px solid #FFB000;
+}
+
+.animation {
+    animation: fadeIn 1s ease-in-out; 
+}
+
+.red-winner {
+    color: #C70039;
+}
+
+.yellow-winner {
+    color: #FFB000;
+}
+
+
+#winner {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+}
